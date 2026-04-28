@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+
+    <link rel="stylesheet" href="youtube.css">
+</head>
+<body>
+
+    
+   <div class="background">
+    <div class="background2">
+
+        <input type="text" id="display">
+
+
+                <button onclick="
+                     calculator = ''
+     updateDisplay();"class="btn" >C</button>
+
+     
+      <button onclick="
+                    calculator += '/';
+     updateDisplay();
+     " class="btn">/</button>
+     <button onclick="
+                calculator += '*';
+     updateDisplay();"  class="btn">*</button>
+
+      <button onclick=" deleteLast();
+     updateDisplay()"class="btn" id="delete">D</button>
+     
+
+      <br>
+
+    <button onclick="
+    calculator += '7';
+    updateDisplay();" class="btn">7</button>
+     <button onclick="
+     calculator += '8';
+     updateDisplay();" class="btn">8</button>
+      <button onclick="
+      calculator += '9';
+     updateDisplay();" class="btn">9</button>
+       <button onclick="
+       calculator += '-';
+     updateDisplay();" class="btn">-</button> <br>
+     
+
+        <button onclick="
+        calculator += '4';
+     updateDisplay();" class="btn">4</button>
+         <button onclick="
+         calculator += '5';
+     updateDisplay();" class="btn">5</button>
+          <button  onclick="
+          calculator += '6';
+     updateDisplay();" class="btn">6</button>
+           <button onclick="
+           calculator += '+';
+     updateDisplay();" class="btn">+</button>
+     <br>
+             <button onclick="
+             calculator += '1';
+     updateDisplay();" class="btn">1</button>
+              <button  onclick="
+              calculator += '2';
+     updateDisplay();"  class="btn">2</button>
+               <button onclick="
+               calculator += '3';
+     updateDisplay();" class="btn">3</button>
+     <button onclick="
+                  calculator = (eval(calculator) / 100).toString();
+     updateDisplay();" class="btn">%</button>
+               
+
+                <br>
+    
+               
+                
+                 <button onclick="
+                 calculator += '0';
+     updateDisplay();" class="btn">0</button>
+                  <button onclick="
+                  calculator += '.';
+        updateDisplay();" class="btn">.</button>
+
+         <button onclick="
+      calculator = eval(calculator);
+     updateDisplay();" class="btn" id="equalto">=</button>
+                
+     
+         
+
+    
+    </div>
+    
+   </div>
+
+    <script src="youtube.js" ></script>
+</body>
+</html>
+
+
